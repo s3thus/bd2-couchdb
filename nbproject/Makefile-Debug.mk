@@ -58,6 +58,7 @@ LDLIBSOPTIONS=-L/usr/local/lib -lpillowtalk /usr/local/lib/libpillowtalk.so
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/couchdb-tester
+	cp src/1k ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/couchdb-tester: /usr/local/lib/libpillowtalk.so
 
